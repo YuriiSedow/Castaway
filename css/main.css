@@ -1,0 +1,17 @@
+button.btn.btn-primary {
+  background: #118da8 !important;
+}
+
+div.home__social img:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+div.footer__col img:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}

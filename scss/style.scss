@@ -1,0 +1,322 @@
+@import 'main.scss';
+@import 'mediaquery.scss';
+
+/*Global*/
+html {
+	font-family: 'DM Sans', sans-serif;
+	background: $background;
+}
+body {
+	background: $background;
+}
+/*Header*/
+header {
+	background: $background;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+}
+.hamb {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	transition: 0.3s;
+	background: #fff;
+}
+.nav-link::last-child {
+	margin-right: 0;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-link {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+	color: #fff !important;
+	&:hover {
+		color: $color !important;
+	}
+}
+
+/*main*/
+main,
+.episodes,
+.jacob,
+.newsletter,
+.reviews,
+.footer {
+	@include color__block;
+}
+.home {
+	display: flex;
+
+	&__info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 60px;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 55px;
+		line-height: 88px;
+		letter-spacing: 3.2px;
+		color: #ffffff;
+	}
+
+	&__span {
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 88px;
+		letter-spacing: 3.2px;
+		color: #ffffff;
+	}
+
+	&__span--one {
+		font-size: 55px;
+		border-bottom: 8px solid darkblue;
+	}
+
+	&__social--text {
+		padding-bottom: 1rem;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 24px;
+		color: #fff;
+		padding-top: 74px;
+	}
+	&__social--items {
+		display: flex;
+		justify-content: space-between;
+		a {
+			padding: 5px;
+		}
+	}
+}
+/*episodes*/
+.episodes {
+	&__main {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		font-weight: 400;
+		color: #fff;
+	}
+	&__latest {
+		margin-top: 20px;
+		padding: 20px;
+		background: #000;
+		display: flex;
+		justify-content: space-around;
+		border-radius: 32px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__spanone {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		color: #ffffff;
+		background: #191919;
+		width: 9%;
+		padding: 6px;
+		border-radius: 6px;
+	}
+
+	&__spantwo {
+		color: $color;
+	}
+
+	&__title--content {
+		font-weight: 400;
+		font-size: 55px;
+		line-height: 70px;
+		letter-spacing: 2.56px;
+		color: #ffffff;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 15px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	&__spanone--tips {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		color: #ffffff;
+		background: #191919;
+		width: 22%;
+		padding: 6px;
+		border-radius: 6px;
+	}
+}
+.btn__episodes {
+	width: 40%;
+}
+
+/*jacob*/
+.jacob {
+	&__recomendation {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__meet {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		color: $color;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 79px;
+		letter-spacing: 2.88px;
+		color: #ffffff;
+	}
+
+	&__about {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 33px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	&__info img {
+		transition: 1s;
+		&:hover {
+			transform: translatex(40px);
+		}
+	}
+}
+/* newsletter*/
+.newsletter {
+	&__info {
+		display: flex;
+		justify-content: space-around;
+		background: #191919;
+		padding: 6px;
+		border-radius: 6px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		color: $color;
+	}
+	&__title {
+		font-weight: 400;
+		font-size: 72px;
+		line-height: 79px;
+		letter-spacing: 2.88px;
+		color: #ffffff;
+	}
+	&__form {
+		input {
+			background: $background;
+			border: 1px solid #191919;
+			border-radius: 6px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 29px;
+			color: rgba(255, 255, 255, 0.7);
+			max-width: 100%;
+			padding: 10px 0 10px 19px;
+		}
+	}
+}
+/*rewiews*/
+.reviews {
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1;
+		gap: 20px;
+		justify-content: space-between;
+	}
+
+	&__item {
+		background: #000000;
+		border-radius: 22px;
+		padding: 60px 110px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__comments {
+		font-weight: 400;
+		font-size: 16px;
+		color: #ffffff;
+	}
+
+	&__man {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+}
+/*footer*/
+.fa {
+	color: #ffff;
+	padding: 5px;
+	&:hover {
+		color: $color;
+	}
+}
+.footer {
+	&__block {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__col--block {
+		display: flex;
+		flex-direction: column;
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 27px;
+		}
+	}
+	&__col--social {
+		a {
+			padding: 5px;
+		}
+	}
+}

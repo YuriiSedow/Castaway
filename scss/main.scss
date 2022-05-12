@@ -1,0 +1,20 @@
+$background: #363f46;
+$color: #118da8;
+
+@mixin color__block {
+	background: $background;
+	padding-top: 40px;
+}
+
+button.btn.btn-primary {
+	background: #118da8 !important;
+}
+
+div.home__social img:hover {
+	transition: 0.5s;
+	transform: scale(1.4);
+}
+div.footer__col img:hover {
+	transition: 1s;
+	transform: scale(1.2);
+}
