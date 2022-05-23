@@ -126,19 +126,6 @@ main,
 		font-weight: 400;
 		color: #fff;
 	}
-	&__latest {
-		margin-top: 20px;
-		padding: 20px;
-		background: #000;
-		display: flex;
-		justify-content: space-around;
-		border-radius: 32px;
-	}
-
-	&__content {
-		display: flex;
-		flex-direction: column;
-	}
 
 	&__spanone {
 		font-weight: 400;
